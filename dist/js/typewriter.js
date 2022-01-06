@@ -1,8 +1,5 @@
-//
-//
-
 class TypeWriter {
-  constructor(txtElement, words, wait = 1000) {
+  constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
     this.words = words;
     this.txt = '';
@@ -43,7 +40,7 @@ class TypeWriter {
       typeSpeed = this.wait;
       // Set delete to true
       this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
+    } else if (this.isDeleting && this.txt === '😎') {
       this.isDeleting = false;
       // Move to next word
       this.wordIndex++;
